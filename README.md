@@ -13,7 +13,8 @@ Lightweight Bash script for automated WordPress backups with count-based rotatio
 
 ## Setup
 ```bash
-git clone https://github.com/Narayana108/WordPress-Rotational-Backups && cd WordPress-Rotational-Backups
+git clone https://github.com/Narayana108/wordPress-rotational-backups && cd wordpress-rotational-backups
+
 chmod +x wp-backup.sh
 vim wp-backup.sh  # Edit paths & retention
 ./wp-backup.sh
