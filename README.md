@@ -25,7 +25,7 @@ Edit at the top of the script:
 | Var | Default | Purpose |
 |-----|---------|---------|
 | `_WP_DIR` | `/var/www/html` | WP root (no trailing slash) |
-| `_BACKUP_DIR` | `/home/vyasa/backups` | Backup destination (must exist) |
+| `_BACKUP_DIR` | `/home/ubuntu/backups/wp` | Backup destination (must exist) |
 | `_RETENTION` | `11` | Number of latest backups to keep |
 
 ## Automation (Debian/Ubuntu)

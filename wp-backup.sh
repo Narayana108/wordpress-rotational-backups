@@ -3,7 +3,7 @@ set -euo pipefail
 
 # EDIT THESE VARS
 _WP_DIR="/var/www/html"
-_BACKUP_DIR="/home/vyasa/backups"
+_BACKUP_DIR="/home/ubuntu/backups/wp"
 _RETENTION=11
 
 # Start 
