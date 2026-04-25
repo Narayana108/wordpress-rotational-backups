@@ -13,9 +13,9 @@ Lightweight Bash script for automated WordPress backups with count-based rotatio
 
 ## Setup
 ```bash
-git clone <repo> && cd WordPress-Rotational-Backups
+git clone https://github.com/Narayana108/WordPress-Rotational-Backups && cd WordPress-Rotational-Backups
 chmod +x wp-backup.sh
-nano wp-backup.sh  # Edit paths & retention
+vim wp-backup.sh  # Edit paths & retention
 ./wp-backup.sh
 ```
 Logs write to `$_BACKUP_DIR/backup.log` and stdout.
@@ -32,12 +32,12 @@ Edit at the top of the script:
 **User cron:**
 ```bash
 crontab -e
-0 2 * * * /path/to/wp-backup.sh >/dev/null 2>&1
+0 5 * * * /path/to/wp-backup.sh >/dev/null 2>&1
 ```
 
 **System-wide (recommended for servers):**
 ```bash
-echo "0 2 * * * root /path/to/wp-backup.sh >/dev/null 2>&1" | sudo tee /etc/cron.d/wp-backup
+echo "0 5 * * * root /path/to/wp-backup.sh >/dev/null 2>&1" | sudo tee /etc/cron.d/wp-backup
 sudo chmod 644 /etc/cron.d/wp-backup
 ```
 
